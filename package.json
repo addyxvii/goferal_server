@@ -1,0 +1,27 @@
+{
+  "name": "goferal_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/addyxvii/goferal_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/addyxvii/goferal_server/issues"
+  },
+  "homepage": "https://github.com/addyxvii/goferal_server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^4.13.4",
+    "favicon": "0.0.2",
+    "logger": "0.0.1",
+    "path": "^0.12.7"
+  }
+}
