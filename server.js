@@ -10,9 +10,18 @@ var express = require('express');
 // var players = require('./routes/players');
 
 var app = express();
+var PORT = 3000;
+
+app.use(middleware.logger);
 
 app.get('/', function(req, res){
   res.send('Go Feral!');
 });
 
-app.listen(3000);
+app.get('/account', middleware.requireAuthentication, function(req, res){
+  res.send('Welcome!');
+});
+
+app.listen(PORT, function(){
+  console.log('listening on port ' + PORT );
+});
