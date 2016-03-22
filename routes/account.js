@@ -1,11 +1,12 @@
+
 var express = require('express')
 var router = express.Router();
 
 router.get('/', function (req, res) {
-  res.send('users');
+  res.send('account');
 });
 
-router.post('/', function(req, res) {
+router.post('/' function(req, res) {
   res.send();
 });
 

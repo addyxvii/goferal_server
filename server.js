@@ -8,21 +8,22 @@ var express = require('express');
 // var routes = require('./routes/index');
 // var users = require('./routes/users');
 // var players = require('./routes/players');
-var _ = require('undercsore');
+var _ = require('underscore');
 
 var app = express();
 var PORT = 3000;
 var middleware = require('./middleware.js');
-var users = require('./routes/users.js')
-var index = require('./routes/index.js')
+var users = require('./routes/users.js');
+var index = require('./routes/index.js');
 
 app.use(middleware.logger);
+// app.use('/users');
 
 app.get('/', function(req, res){
   res.send('Go Feral!');
 });
 
-app.get('/account', middleware.requireAuthentication, function(req, res){
+app.get('/profile', middleware.requireAuthentication, function(req, res){
   res.send('Welcome!');
 });
 
